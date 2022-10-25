@@ -1,0 +1,1 @@
+print(*list(slide('help me plz', 1)))
