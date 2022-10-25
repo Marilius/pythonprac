@@ -16,6 +16,6 @@ print(*list(slide('help me plz', 1)))
 # print(*list(slide(range(5), 3)))
 # print(list(islice('abcdef', 10)))
 
-# exec(sys.stdin.read())
+exec(sys.stdin.read())
 
 
