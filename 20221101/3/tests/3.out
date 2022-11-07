@@ -1,0 +1,7 @@
+f=grange(1, 3, 1048575), g=grange(1, 3, 1048576), h=grange(1, 3, 1048577)
+[1](False), [100](False)
+len(f)=13, len(g)=13, len(h)=13
+len(list(f))=13, len(list(g))=13, len(list(h))=13
+f[0]=1, h[24]=282429536481
+a=grange(3, 3, 10), a[5]=729
+b=grange(3, 9, 100), b[5]=177147, list(b)=[3, 27]
