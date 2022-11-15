@@ -1,0 +1,15 @@
+class C:
+    num = Num()
+
+
+a = C()
+a.num = 'kakaska'
+print(a.num)
+print(C().num)
+c, d = C(), C()
+c.num = d.num = 6
+print(c.num+d.num)
+c.num = "lolkek_test_test"
+print(c.num+d.num)
+d.num = range(100, 500, 23)
+print(c.num+d.num)
