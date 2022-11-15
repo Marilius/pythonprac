@@ -1,0 +1,5 @@
+c, d, e = C(bool), C(int), C(list)
+a = [C(str) for i in range(100)]
+print(C.counter)
+c = 100500
+print(C.counter)

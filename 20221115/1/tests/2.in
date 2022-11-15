@@ -1,0 +1,5 @@
+c, d, e = C(), C(), C()
+a = [C() for i in range(100)]
+print(C.counter)
+c = 100500
+print(C.counter)
