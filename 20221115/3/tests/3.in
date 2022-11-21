@@ -1,0 +1,23 @@
+try:
+    alp0 = Alpha(fistailo=10, raka=2, maka=42, fo=10)
+except AttributeError:
+    print(':(')
+alp = Alpha(c=10, z=2, a=42)
+try:
+    alp.ab = 123
+except AttributeError:
+    print(':(')
+alp.e = 123
+print(alp)
+
+try:
+    alp0 = AlphaQ(fistailo=10, raka=2, maka=42, fo=10)
+except AttributeError:
+    print(':(')
+alq = AlphaQ(c=10, z=2, a=42)
+try:
+    alp.ab = 123
+except AttributeError:
+    print(':(')
+alq.e = 123
+print(alq)

@@ -1,0 +1,23 @@
+import time
+slots = time.time()
+alpha = Alpha()
+for i in range(100000):
+    for c in string.ascii_lowercase:
+        setattr(alpha, c, i // ord(c))
+for i in range(100000):
+    for c in string.ascii_lowercase:
+        getattr(alpha, c) % ord(c)
+
+time_slots = time.time() - slots
+
+start_time_no_slots = time.time()
+alphaq = AlphaQ()
+for i in range(100000):
+    for c in string.ascii_lowercase:
+        setattr(alphaq, c, i // ord(c))
+for i in range(100000):
+    for c in string.ascii_lowercase:
+        getattr(alphaq, c) % ord(c)
+time_no_slots = time.time() - start_time_no_slots
+
+print(time_slots < time_no_slots)
