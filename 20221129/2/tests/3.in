@@ -1,0 +1,14 @@
+class C(metaclass=check):
+    B: float
+
+
+c = C()
+print(c.check_annotations())
+c.B = 12.0
+print(c.check_annotations())
+c.B = [100500, 42, False]
+print(c.check_annotations())
+c.B = 100/111
+print(c.check_annotations())
+c.B = C()
+print(c.check_annotations())

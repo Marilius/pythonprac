@@ -1,0 +1,15 @@
+class C(metaclass=check):
+    A: list[int]
+    B: str = "QQ"
+
+
+c = C()
+print(c.check_annotations())
+c.A = 12
+print(c.check_annotations())
+c.A = [100500, 42, False]
+print(c.check_annotations())
+c.B = type("Boo", (int,), {})(42)
+print(c.check_annotations())
+c.A = [False]
+print(c.check_annotations())
