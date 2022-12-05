@@ -1,0 +1,14 @@
+class C(metaclass=dump):
+    def __init__(self, *a, **b):
+        self.a = a
+        self.b = b
+
+    def add(self, *a, **b):
+        self.a += a
+        self.b.update(b)
+        return self.a, self.b
+
+
+c = C(10, amogus='ы')
+print(c.add(9, рыба='золото'))
+print(c.add(9, курячий='жизнь'))

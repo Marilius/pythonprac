@@ -1,0 +1,16 @@
+class C(metaclass=dump):
+    def __init__(self, a, **b):
+        self.a = self.f69(a)
+
+    @staticmethod
+    def f69(x, *a):
+        return '69'
+
+    def add(self, *a):
+        self.a += self.f69(a)
+        return self.a
+
+
+c = C(10)
+print(c.f69('золото'))
+print(c.f69('курячий'))

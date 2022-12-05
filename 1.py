@@ -1,39 +1,15 @@
-class morse:
-    def __init__(self, value=''):
-        self.ans = ''
-        self.d = {'+': 'di', '.': 'dit', '-': 'dah'}
-        self.end = ''
-        value1 = value.split()
-        if len(value1) == 1:
-            pass
-        elif len(value1) < 4:
-            self.end = value[-1]
-        elif len(value) == 4:
-            self.end = value[3]
+def statcounter():
+    pass
 
 
+stat = statcounter()
+stats = next(stat)
 
+@stat.send
+def f1(a): return a+1
 
-    def __pos__(self):
-        self.ans += 'dit'
-        return self
+@stat.send
+def f2(a, b): return f1(a)+f1(b)
 
-    def __neg__(self):
-        self.ans += 'dah'
-        return self
-
-    def __str__(self):
-        return self.ans
-
-
-
-
-print(-+morse())
-print(-++~+-+morse())
-print(--+~-~-++~+++-morse())
-print(--+~-~-++~+++-morse(".-"))
-print(--+~-~-++~+++-morse("..-"))
-print(--+~-~-++~+++-morse("..-|"))
-print(--+~-~-++~+++-morse("dot DOT dash"))
-print(--+~-~-++~+++-morse("ai aui oi "))
-print(--+~-~-++~+++-morse("dot dot dash ///"))
+print(f1(f2(2,3)+f2(5,6)))
+print(*((f.__name__, c) for f, c in stats.items()))
