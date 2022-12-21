@@ -12,7 +12,7 @@ def slide(seq, n):
         next(seq)
 
 
-print(*list(slide('help me plz', 1)))
+# print(*list(slide('help me plz', 1)))
 # print(*list(slide(range(5), 3)))
 # print(list(islice('abcdef', 10)))
 
