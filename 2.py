@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 graph = dict()
 linerized = dict()
 
@@ -21,7 +23,6 @@ def linerize(name, bases):
     i = 0
     pretendents += [bases[:]]
     answer = []
-    # print(f"{pretendents=}")
     while i < len(pretendents):
         while i < len(pretendents) and len(pretendents[i]) == 0:
             i += 1
@@ -41,7 +42,7 @@ def linerize(name, bases):
     if len(pretendents) > 0:
         return False
 
-    linerized[name] = answer.copy()
+    linerized[name] = deepcopy(answer)
 
     return True
 
@@ -59,7 +60,7 @@ while line := input():
         params_end_pos = line.find(":")
     bases = [x.strip() for x in line[end_pos + 1:params_end_pos].split(",")]
     bases = list(filter(lambda x: len(x) > 0, bases))
-
+    # print(bases)
     graph[name] = bases
 
     if not linerize(name, bases):
