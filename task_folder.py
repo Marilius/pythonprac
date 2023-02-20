@@ -10,7 +10,7 @@ if not isExist:
     os.makedirs(data)
     print("The new directory is created!")
 
-for i in range(1, 4):
+for i in range(0, 1):
     path = f'{data}/{i}'
     isExist = os.path.exists(path)
     if not isExist:
