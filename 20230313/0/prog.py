@@ -12,7 +12,7 @@ async def echo(reader, writer):
                 writer.write(a.swapcase())
             case [b'info', b'host']:
                 writer.write(host.encode())
-            case [b'info', b'posr']:
+            case [b'info', b'post']:
                 writer.write(f'{port}'.encode())
         writer.write(b'\n')
         # await writer.drain()
