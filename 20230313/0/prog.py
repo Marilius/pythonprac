@@ -2,18 +2,19 @@ import asyncio
 
 
 async def echo(reader, writer):
+    host, port = writer.get_extra_info('peername')
     while not reader.at_eof():
-        data = await reader.readline()
+        data = (await reader.readline()).strip()
         data = data.split(maxsplit=1)
 
         match data:
-            case ['print', a]:
-                writer.write(a)
-                await writer.drain()
-            case ['info', b]:
-                writer.write(str(writer.get_extra_info('peername')[0 if b == b'host\n' else 1]).encode())
-                await writer.drain()
-        # writer.write(data.swapcase())
+            case [b'print', a]:
+                writer.write(a.swapcase())
+            case [b'info', b'host']:
+                writer.write(host.encode())
+            case [b'info', b'posr']:
+                writer.write(f'{port}'.encode())
+        writer.write(b'\n')
         # await writer.drain()
     writer.close()
     await writer.wait_closed()
