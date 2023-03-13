@@ -14,6 +14,8 @@ async def echo(reader, writer):
                 writer.write(host.encode())
             case [b'info', b'post']:
                 writer.write(f'{port}'.encode())
+            case [b'quit']:
+                break
         writer.write(b'\n')
         # await writer.drain()
     writer.close()
