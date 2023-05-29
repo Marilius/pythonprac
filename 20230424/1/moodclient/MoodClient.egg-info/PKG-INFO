@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: MoodClient
+Version: 0.0.1
+Summary: Client for MOOD
+Author-email: Basalov Iaroslav <s02200273@gse.cs.msu.ru>
+Project-URL: repository, https://github.com/Marilius/pythonprac
+Keywords: mood,project
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
