@@ -11,8 +11,8 @@ sys.path.append(os.path.abspath('../..'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'MUD game'
-copyright = '2023, Novikov Sergey'
-author = 'Novikov Sergey'
+copyright = '2023, Basalov Iaroslav'
+author = 'Basalov Iaroslav'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

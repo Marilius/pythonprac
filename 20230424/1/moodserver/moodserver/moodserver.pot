@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-29 00:37+0300\n"
+"POT-Creation-Date: 2023-05-30 04:22+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,95 +17,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: moodserver/server.py:308
+#: moodserver/moodserver/server.py:312
 msgid "Set up locale: {}"
 msgstr ""
 
-#: moodserver/server.py:309
+#: moodserver/moodserver/server.py:313
 msgid "You are successfully registered as {}"
 msgstr ""
 
-#: moodserver/server.py:310
+#: moodserver/moodserver/server.py:314
 msgid "{} joined the game"
 msgstr ""
 
-#: moodserver/server.py:311
+#: moodserver/moodserver/server.py:315
 msgid "{} left the game"
 msgstr ""
 
-#: moodserver/server.py:312
+#: moodserver/moodserver/server.py:316
 msgid "Moved to ({}, {})"
 msgstr ""
 
-#: moodserver/server.py:313
+#: moodserver/moodserver/server.py:317
 msgid "Added {} to ({}, {}) saying \"{}\""
 msgstr ""
 
-#: moodserver/server.py:314
+#: moodserver/moodserver/server.py:318
 msgid ". Replaced the old monster"
 msgstr ""
 
-#: moodserver/server.py:315
+#: moodserver/moodserver/server.py:319
 msgid "{} added {} with {} {} to ({}, {})"
 msgstr ""
 
-#: moodserver/server.py:316
+#: moodserver/moodserver/server.py:320
 msgid "{} moved one cell {}"
 msgstr ""
 
-#: moodserver/server.py:317
+#: moodserver/moodserver/server.py:321
 msgid "right"
 msgstr ""
 
-#: moodserver/server.py:318
+#: moodserver/moodserver/server.py:322
 msgid "left"
 msgstr ""
 
-#: moodserver/server.py:319
+#: moodserver/moodserver/server.py:323
 msgid "up"
 msgstr ""
 
-#: moodserver/server.py:320
+#: moodserver/moodserver/server.py:324
 msgid "down"
 msgstr ""
 
-#: moodserver/server.py:321
+#: moodserver/moodserver/server.py:325
 msgid "Something bad has happened. Please reconnect to the server"
 msgstr ""
 
-#: moodserver/server.py:322
+#: moodserver/moodserver/server.py:326
 msgid "No {} here"
 msgstr ""
 
-#: moodserver/server.py:323
+#: moodserver/moodserver/server.py:327
 msgid " {} is dead"
 msgstr ""
 
-#: moodserver/server.py:324
+#: moodserver/moodserver/server.py:328
 msgid " {} now has {} {}"
 msgstr ""
 
-#: moodserver/server.py:325
+#: moodserver/moodserver/server.py:329
 msgid "axe"
 msgstr ""
 
-#: moodserver/server.py:326
+#: moodserver/moodserver/server.py:330
 msgid "spear"
 msgstr ""
 
-#: moodserver/server.py:327
+#: moodserver/moodserver/server.py:331
 msgid "sword"
 msgstr ""
 
-#: moodserver/server.py:328
+#: moodserver/moodserver/server.py:332
 msgid "Attacked {} with {}. Damage {} {}."
 msgstr ""
 
-#: moodserver/server.py:329
+#: moodserver/moodserver/server.py:333
 msgid "{} attacked {} with {}. Damage {} {}."
 msgstr ""
 
-#: moodserver/server.py:330
+#: moodserver/moodserver/server.py:334
 msgid "hp"
 msgid_plural "hp"
 msgstr[0] ""

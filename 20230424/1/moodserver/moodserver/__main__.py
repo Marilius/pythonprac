@@ -1,7 +1,8 @@
 from . import server
 
 
-if __name__ == '__main__':
+def run():
+    """Run server."""
     try:
         s = server.Server()
         s.start()

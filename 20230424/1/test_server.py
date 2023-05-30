@@ -25,11 +25,16 @@ class TestServer(unittest.TestCase):
         self.assertEqual(response.strip(), 'Moved to (9, 0)')
 
     def test_1(self):
-        self.player.do_addmon('banana hello hello hp 25 coords 9 0')
+        self.player.do_addmon('dragon hello hello hp 25 coords 9 0')
         response = self.player.socket.recv(self.player.buffer_size).decode()
-        self.assertEqual(response.strip(), 'Added banana to (9, 0) saying "hello"')
+        self.assertEqual(response.strip(), 'Added dragon to (9, 0) saying "hello"')
 
-    def test_2(self):
-        self.player.do_attack('banana with sword')
+    # def test_2(self):
+    #     self.player.do_addmon('Путин hello "За Русь - усрусь" hp 666 coords 6 9')
+    #     response = self.player.socket.recv(self.player.buffer_size).decode()
+    #     self.assertEqual(response.strip(), 'Added banana to (9, 0) saying "hello"')
+
+    def test_3(self):
+        self.player.do_attack('dragon with sword')
         response = self.player.socket.recv(self.player.buffer_size).decode()
-        self.assertEqual(response.strip(), 'Attacked banana with sword. Damage 10 hp. banana now has 15 hp')
+        self.assertEqual(response.strip(), 'Attacked dragon with sword. Damage 10 hp. dragon now has 15 hp')

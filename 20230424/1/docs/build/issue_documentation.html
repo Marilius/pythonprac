@@ -30,55 +30,52 @@
 
           <div class="body" role="main">
             
-  <section id="module-moodserver.server">
-<span id="issue-documentation"></span><h1>Issue documentation<a class="headerlink" href="#module-moodserver.server" title="Permalink to this heading">¶</a></h1>
+  <section id="issue-documentation">
+<h1>Issue documentation<a class="headerlink" href="#issue-documentation" title="Permalink to this heading">¶</a></h1>
+</section>
+<section id="module-moodserver.moodserver.server">
+<span id="server"></span><h1>Server<a class="headerlink" href="#module-moodserver.moodserver.server" title="Permalink to this heading">¶</a></h1>
 <p>Server module of MUD game</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.Dungeon">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Dungeon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.server.Dungeon" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Dungeon">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Dungeon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.moodserver.server.Dungeon" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instance of this class represents a dungeon in the game</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.EmptyCell">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">EmptyCell</span></span><a class="headerlink" href="#moodserver.server.EmptyCell" title="Permalink to this definition">¶</a></dt>
-<dd><p>Instances of this class indicate empty cell in dungeon</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.MessageToTranslate">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">MessageToTranslate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.server.MessageToTranslate" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.MessageToTranslate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.moodserver.server.</span></span><span class="sig-name descname"><span class="pre">MessageToTranslate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.moodserver.server.MessageToTranslate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instances of this class represents output messages for users which have to be translated</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.Monster">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Monster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greeting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.server.Monster" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Monster">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Monster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greeting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.moodserver.server.Monster" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instances of this class indicate monster in dungeon cell</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.Player">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Player</span></span><a class="headerlink" href="#moodserver.server.Player" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Player">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Player</span></span><a class="headerlink" href="#moodserver.moodserver.server.Player" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instance of this class represents the player in the dungeon</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="moodserver.server.Server">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1337</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.server.Server" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodserver.moodserver.server.</span></span><span class="sig-name descname"><span class="pre">Server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1337</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodserver.moodserver.server.Server" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instance of this class represents the server which runs the game</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>_clients</strong> (<em>dict</em><em>[</em><em>'str':asyncio.Queue</em><em>]</em>) – storage of clients’ queues</p></li>
 <li><p><strong>_players</strong> (<em>dict</em><em>[</em><em>'str':Player</em><em>]</em>) – storage of players in the game</p></li>
-<li><p><strong>_dungeon</strong> (<a class="reference internal" href="#moodserver.server.Dungeon" title="moodserver.server.Dungeon"><em>Dungeon</em></a>) – game’s dungeon</p></li>
+<li><p><strong>_dungeon</strong> (<a class="reference internal" href="#moodserver.moodserver.server.Dungeon" title="moodserver.moodserver.server.Dungeon"><em>Dungeon</em></a>) – game’s dungeon</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.addmon">
-<span class="sig-name descname"><span class="pre">addmon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greeting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.addmon" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.addmon">
+<span class="sig-name descname"><span class="pre">addmon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">greeting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.addmon" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to add a monster</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -101,8 +98,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.attack">
-<span class="sig-name descname"><span class="pre">attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.attack" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.attack">
+<span class="sig-name descname"><span class="pre">attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hitpoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.attack" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to attack a monster by player</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -122,8 +119,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.chat">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StreamReader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">writer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StreamWriter</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.server.Server.chat" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.chat">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StreamReader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">writer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StreamWriter</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.chat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to process a player’s client side</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -136,8 +133,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.encounter">
-<span class="sig-name descname"><span class="pre">encounter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.encounter" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.encounter">
+<span class="sig-name descname"><span class="pre">encounter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.encounter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to check if a player has encountered a monster</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -153,15 +150,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.monster_migration">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">monster_migration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.server.Server.monster_migration" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.monster_migration">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">monster_migration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.monster_migration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to pick random monster and direction
 every 30 seconds and move monster in this direction</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.move">
-<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.move" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.move" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to move a player in the dungeon</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -181,14 +178,14 @@ every 30 seconds and move monster in this direction</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.start">
-<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.server.Server.start" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.start" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to start the server</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.translate">
-<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#moodserver.server.MessageToTranslate" title="moodserver.server.MessageToTranslate"><span class="pre">MessageToTranslate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.translate" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#moodserver.moodserver.server.MessageToTranslate" title="moodserver.moodserver.server.MessageToTranslate"><span class="pre">MessageToTranslate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.translate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to translate whole message for the player</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -207,8 +204,8 @@ every 30 seconds and move monster in this direction</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="moodserver.server.Server.translate_event">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">translate_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngettext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.server.Server.translate_event" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="moodserver.moodserver.server.Server.translate_event">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">translate_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngettext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#moodserver.moodserver.server.Server.translate_event" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method to transform event to its translated description</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -226,6 +223,81 @@ every 30 seconds and move monster in this direction</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-moodclient.moodclient.client">
+<span id="client"></span><h1>Client<a class="headerlink" href="#module-moodclient.moodclient.client" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">moodclient.moodclient.client.</span></span><span class="sig-name descname"><span class="pre">Client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instance of this class represents the client which runs the game.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.complete_attack">
+<span class="sig-name descname"><span class="pre">complete_attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begidx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endidx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.complete_attack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attack command completion.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_addmon">
+<span class="sig-name descname"><span class="pre">do_addmon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_addmon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a monster:  addmon &lt;name&gt; coord &lt;x&gt; &lt;y&gt; hello &lt;message&gt; hp &lt;health points&gt;.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_attack">
+<span class="sig-name descname"><span class="pre">do_attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_attack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attack the monster: attack &lt;name&gt; [with &lt;weapon&gt;].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_down">
+<span class="sig-name descname"><span class="pre">do_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move one step down.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_exit">
+<span class="sig-name descname"><span class="pre">do_exit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_exit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exit the game.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_left">
+<span class="sig-name descname"><span class="pre">do_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move one step left.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_locale">
+<span class="sig-name descname"><span class="pre">do_locale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_locale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set locale: ru or en_ng</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_right">
+<span class="sig-name descname"><span class="pre">do_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move one step right.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_sayall">
+<span class="sig-name descname"><span class="pre">do_sayall</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_sayall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send message to all players.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.do_up">
+<span class="sig-name descname"><span class="pre">do_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.do_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move one step up.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moodclient.moodclient.client.Client.parse_addmon">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_addmon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#moodclient.moodclient.client.Client.parse_addmon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse addmov command.</p>
 </dd></dl>
 
 </dd></dl>
@@ -251,13 +323,17 @@ every 30 seconds and move monster in this direction</p>
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Issue documentation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.Dungeon"><code class="docutils literal notranslate"><span class="pre">Dungeon</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.EmptyCell"><code class="docutils literal notranslate"><span class="pre">EmptyCell</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.MessageToTranslate"><code class="docutils literal notranslate"><span class="pre">MessageToTranslate</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.Monster"><code class="docutils literal notranslate"><span class="pre">Monster</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.Player"><code class="docutils literal notranslate"><span class="pre">Player</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#moodserver.server.Server"><code class="docutils literal notranslate"><span class="pre">Server</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Issue documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#module-moodserver.moodserver.server">Server</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#moodserver.moodserver.server.Dungeon"><code class="docutils literal notranslate"><span class="pre">Dungeon</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moodserver.moodserver.server.MessageToTranslate"><code class="docutils literal notranslate"><span class="pre">MessageToTranslate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moodserver.moodserver.server.Monster"><code class="docutils literal notranslate"><span class="pre">Monster</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moodserver.moodserver.server.Player"><code class="docutils literal notranslate"><span class="pre">Player</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moodserver.moodserver.server.Server"><code class="docutils literal notranslate"><span class="pre">Server</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#module-moodclient.moodclient.client">Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#moodclient.moodclient.client.Client"><code class="docutils literal notranslate"><span class="pre">Client</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -293,7 +369,7 @@ every 30 seconds and move monster in this direction</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2023, Novikov Sergey.
+      &copy;2023, Basalov Iaroslav.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>

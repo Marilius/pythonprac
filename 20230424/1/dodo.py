@@ -5,77 +5,83 @@ import shutil
 DOIT_CONFIG = {'default_tasks': ['html']}
 
 
-def task_compile():
+def task_i18n():
     """Compile translations"""
     return {
-            'actions': ['pybabel compile -D server -d moodserver/translation'],
-            'file_dep': ['moodserver/translation/ru/LC_MESSAGES/server.po'],
-            'targets': ['moodserver/translation/ru/LC_MESSAGES/server.mo'],
-            'clean': True,
-           }
+        'actions': ['pybabel compile -d moodserver/moodserver/translation -D moodserver'],
+        'file_dep': ['moodserver/moodserver/translation/ru/LC_MESSAGES/moodserver.po'],
+        'targets': ['moodserver/moodserver/translation/ru/LC_MESSAGES/moodserver.mo'],
+        # 'clean': True,
+    }
 
 
 def task_extract():
     """Extract translations"""
     return {
-            'actions': ['pybabel extract -o moodserver/server.pot --input-dirs moodserver/'],
-            'targets': ['moodserver/server.pot']
-           }
+        'actions': ['pybabel extract --input-dirs moodserver/moodserver -o moodserver/moodserver/moodserver.pot'],
+        'targets': ['moodserver/moodserver/moodserver.pot'],
+        'clean': True,
+    }
 
 
 def task_update():
     """Update translations"""
     return {
-            'actions': ['pybabel update -D server -d moodserver/translation -i moodserver/server.pot'],
-            'file_dep': ['moodserver/server.pot'],
-            'targets': ['moodserver/translation/ru/LC_MESSAGES/server.po'],
-           }
+        'actions': ['pybabel update -D moodserver -d moodserver/moodserver/translation -i moodserver/moodserver/moodserver.pot'],
+        'file_dep': ['moodserver/moodserver/moodserver.pot'],
+        'targets': ['moodserver/moodserver/translation/ru/LC_MESSAGES/moodserver.po'],
+        'clean': True,
+    }
 
 
 def task_test():
     """Test MOOD"""
     return {
-            'actions': ['python -m unittest -v'],
-            'file_dep': ['test_server.py'],
-            'task_dep': ['compile'],
-            'clean': True,
-           }
+        'actions': ['python -m unittest -v'],
+        'file_dep': ['test_server.py'],
+        'task_dep': ['i18n'],
+        # 'clean': True,
+    }
 
 
 def task_html():
     """Build html documentation"""
     return {
-            'actions': ['sphinx-build docs/source docs/build'],
-            'task_dep': ['compile'],
-            'targets': ['docs/build'],
-            'clean': [clean_targets, lambda: shutil.rmtree('docs/build')]
-            }
+        'actions': ['sphinx-build docs/source docs/build'],
+        'task_dep': ['i18n'],
+        'targets': ['docs/build'],
+        'clean': [clean_targets, lambda: shutil.rmtree('docs/build')]
+    }
 
 
-def task_server():
+def task_whlserver():
     """Make server wheel"""
     return {
-        'actions': ['python -m build -n -w moodserver'],
-        'task_dep': ['compile'],
-        'file_dep': ['moodserver/pyproject.toml', 'moodserver/translation/ru/LC_MESSAGES/server.mo'],
+        'actions': ['python3 -m build -n -w moodserver'],
+        'task_dep': ['i18n'],
+        'file_dep': ['moodserver/pyproject.toml', 'moodserver/moodserver/translation/ru/LC_MESSAGES/moodserver.mo'],
         'targets': ['moodserver/dist/*.whl'],
         'clean': [lambda: shutil.rmtree('moodserver/dist'), lambda: shutil.rmtree('moodserver/build'), lambda: shutil.rmtree('moodserver/MoodServer.egg-info')],
-        }
+    }
 
 
-def task_client():
+def task_whlclient():
     """Make client wheel"""
     return {
-        'actions': ['python -m build -n -w moodclient'],
+        'actions': ['python3 -m build -n -w moodclient'],
         'file_dep': ['moodclient/pyproject.toml'],
         'targets': ['moodclient/dist/*.whl'],
         'clean': [lambda: shutil.rmtree('moodclient/dist'), lambda: shutil.rmtree('moodclient/build'), lambda: shutil.rmtree('moodclient/MoodClient.egg-info')],
-        }
+    }
 
 
 def task_w():
     """Make wheels"""
     return {
         'actions': None,
-        'task_dep': ['server', 'client'],
-        }
+        'task_dep': ['whlserver', 'whlclient'],
+        'clean': [
+            lambda: shutil.rmtree('moodclient/dist'), lambda: shutil.rmtree('moodclient/build'), lambda: shutil.rmtree('moodclient/MoodClient.egg-info'),
+            lambda: shutil.rmtree('moodserver/dist'), lambda: shutil.rmtree('moodserver/build'), lambda: shutil.rmtree('moodserver/MoodServer.egg-info'),
+        ],
+    }

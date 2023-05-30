@@ -3,9 +3,10 @@ import sys
 import threading
 
 
-if __name__ == '__main__':
+def run():
+    """Run client."""
     try:
-        cl = client.Client(username=sys.argv[1])
+        cl = client.Client(login=sys.argv[1])
         receiver = threading.Thread(target=cl.receive, args=(), daemon=True)
         receiver.start()
         cl.cmdloop()

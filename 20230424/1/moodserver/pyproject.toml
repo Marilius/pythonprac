@@ -1,7 +1,7 @@
 [project]
 name = "MoodServer"
 version = "0.0.1"
-description = "Server for MOOD"
+description = "MOOD Server"
 requires-python = ">=3.10"
 authors = [{name = "Basalov Iaroslav", email = "s02200273@gse.cs.msu.ru"}]
 keywords = ["mood", "project"]
@@ -20,7 +20,7 @@ requires = ["alabaster", "Babel", "build", "doit", "flake8", "pybabel", "pycodes
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-moodserver = "moodserver.server:main"
+moodserver = "moodserver.__main__:run"
 
 [tool.setuptools.package-data]
-moodserver = ["po/*/*/*.mo"]
+moodserver = ["moodserver/translation/ru/LC_MESSAGES/moodserver.mo"]

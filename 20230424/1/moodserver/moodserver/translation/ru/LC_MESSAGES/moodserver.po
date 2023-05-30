@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-29 00:37+0300\n"
-"PO-Revision-Date: 2023-04-22 11:18+0300\n"
+"POT-Creation-Date: 2023-05-30 04:22+0300\n"
+"PO-Revision-Date: 2023-05-30 11:18+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -19,95 +19,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: moodserver/server.py:308
+#: moodserver/moodserver/server.py:312
 msgid "Set up locale: {}"
 msgstr "Установлена локаль: {}"
 
-#: moodserver/server.py:309
+#: moodserver/moodserver/server.py:313
 msgid "You are successfully registered as {}"
 msgstr "Вы успешно зарегистрировались под ником {}"
 
-#: moodserver/server.py:310
+#: moodserver/moodserver/server.py:314
 msgid "{} joined the game"
 msgstr "{} вошёл в игру"
 
-#: moodserver/server.py:311
+#: moodserver/moodserver/server.py:315
 msgid "{} left the game"
 msgstr "{} вышел из игры"
 
-#: moodserver/server.py:312
+#: moodserver/moodserver/server.py:316
 msgid "Moved to ({}, {})"
 msgstr "Перешел в клетку ({}, {})"
 
-#: moodserver/server.py:313
+#: moodserver/moodserver/server.py:317
 msgid "Added {} to ({}, {}) saying \"{}\""
 msgstr "Добавлен монстр {} в клетку ({}, {}), который говорит \"{}\""
 
-#: moodserver/server.py:314
+#: moodserver/moodserver/server.py:318
 msgid ". Replaced the old monster"
 msgstr ". Старый монстр был удалён из этой клетки"
 
-#: moodserver/server.py:315
+#: moodserver/moodserver/server.py:319
 msgid "{} added {} with {} {} to ({}, {})"
 msgstr "{} добавил монстра {}, который имеет {} {} здоровья, в клетку ({}, {})"
 
-#: moodserver/server.py:316
+#: moodserver/moodserver/server.py:320
 msgid "{} moved one cell {}"
 msgstr "Монстр {} сдвинулся на одну клетку {}"
 
-#: moodserver/server.py:317
+#: moodserver/moodserver/server.py:321
 msgid "right"
 msgstr "вправо"
 
-#: moodserver/server.py:318
+#: moodserver/moodserver/server.py:322
 msgid "left"
 msgstr "влево"
 
-#: moodserver/server.py:319
+#: moodserver/moodserver/server.py:323
 msgid "up"
 msgstr "вверх"
 
-#: moodserver/server.py:320
+#: moodserver/moodserver/server.py:324
 msgid "down"
 msgstr "вниз"
 
-#: moodserver/server.py:321
+#: moodserver/moodserver/server.py:325
 msgid "Something bad has happened. Please reconnect to the server"
 msgstr "Произошла ошибка. Пожалуйста, переподключитесь к серверу"
 
-#: moodserver/server.py:322
+#: moodserver/moodserver/server.py:326
 msgid "No {} here"
 msgstr "Здесь нет монстра с именем {}"
 
-#: moodserver/server.py:323
+#: moodserver/moodserver/server.py:327
 msgid " {} is dead"
 msgstr " Монстр {} мертв"
 
-#: moodserver/server.py:324
+#: moodserver/moodserver/server.py:328
 msgid " {} now has {} {}"
 msgstr "Монстр {} теперь имеет {} {} здоровья"
 
-#: moodserver/server.py:325
+#: moodserver/moodserver/server.py:329
 msgid "axe"
 msgstr "топором"
 
-#: moodserver/server.py:326
+#: moodserver/moodserver/server.py:330
 msgid "spear"
 msgstr "копьем"
 
-#: moodserver/server.py:327
+#: moodserver/moodserver/server.py:331
 msgid "sword"
 msgstr "мечом"
 
-#: moodserver/server.py:328
+#: moodserver/moodserver/server.py:332
 msgid "Attacked {} with {}. Damage {} {}."
 msgstr "Атаковал {} {}. Урон - {} {}."
 
-#: moodserver/server.py:329
+#: moodserver/moodserver/server.py:333
 msgid "{} attacked {} with {}. Damage {} {}."
 msgstr "{} атаковал {} {}. Урон - {} {}."
 
-#: moodserver/server.py:330
+#: moodserver/moodserver/server.py:334
 msgid "hp"
 msgid_plural "hp"
 msgstr[0] "очко"

@@ -1,7 +1,7 @@
 [project]
 name = "MoodClient"
 version = "0.0.1"
-description = "Client for MOOD"
+description = "MOOD Client"
 requires-python = ">=3.10"
 authors = [{name = "Basalov Iaroslav", email = "s02200273@gse.cs.msu.ru"}]
 keywords = ["mood", "project"]
@@ -20,4 +20,4 @@ requires = ["alabaster", "Babel", "build", "doit", "flake8", "pybabel", "pycodes
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-moodclient = "moodclient.client:main"
+moodclient = "moodclient.__main__:run"
